@@ -6,8 +6,7 @@
 
 ## 📘 Description
 
-**Chat With Your Notes** is a powerful Gen-AI tool that lets users upload any PDF file — such as lecture notes, manuals, or research papers — and then ask questions in natural language. Powered by **HuggingFace GPT2**, **LangChain**, and **FAISS**, it returns intelligent, context-aware answers derived directly from your document.
-
+GenAI-powered PDF Q&A tool using LangChain, FAISS, GPT2 — built by Srijan Reddy.
 No more CTRL+F. Just ask. Get answers. Like a demon that understands text---
 
 ## ✨ Features
