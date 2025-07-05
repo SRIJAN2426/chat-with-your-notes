@@ -1,7 +1,7 @@
 streamlit==1.26.0
 PyPDF2==3.0.1
 transformers==4.31.0
-torch==2.0.1
+torch==2.7.1
 langchain==0.1.14
 langchain-community==0.0.33
 sentence-transformers==2.2.2
