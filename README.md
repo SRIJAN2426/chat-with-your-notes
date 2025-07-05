@@ -1,54 +1,100 @@
-# chat-with-your-notes
-Ask questions to your PDFs using AI.
-# 👹 Chat With Your Notes — Powered by Srijan's Devil AI
-
-**Talk to your PDFs like never before.**  
-Upload lecture notes, manuals, research papers — and ask questions like you're chatting with a demon tutor who never sleeps.
-
-> Built with 🔥 by [Srijan Reddy Thandra](https://github.com/SrijanReddyThandra)  
-> Harnessing LangChain, FAISS, HuggingFace, and Streamlit.
-
-
-## 🚀 Features
-
-- 📄 Upload any text-based PDF
-- 💬 Ask contextual questions about the content
-- 🧠 Embeds your notes using `sentence-transformers`
-- ⚙️ Uses `FAISS` for fast vector similarity
-- 🤖 Answers powered by GPT2 (custom LLM) locally
-- 🌑 Dark themed UI (devil mode enabled)
-- 🧾 Saves chat history within session
+# 👹 Chat With Your Notes  
+### _"Where your PDFs speak... and obey."_  
+**Built by [Srijan Reddy](https://github.com/SRIJAN2426)**
 
 ---
 
-## 🛠️ Tech Stack
+## 📘 Description
 
-| Component | Tool |
-|----------|------|
-| 💬 LLM | `HuggingFace GPT-2` via Transformers |
-| 📚 Embeddings | `sentence-transformers` |
-| 🔍 Vector DB | `FAISS` |
-| 📎 PDF Parsing | `PyPDF2` |
-| 🧠 Framework | `LangChain` |
-| 🎨 UI | `Streamlit` |
-| 🐍 Language | Python 3.9+ |
+**Chat With Your Notes** is a powerful Gen-AI tool that lets users upload any PDF file — such as lecture notes, manuals, or research papers — and then ask questions in natural language. Powered by **HuggingFace GPT2**, **LangChain**, and **FAISS**, it returns intelligent, context-aware answers derived directly from your document.
+
+No more CTRL+F. Just ask. Get answers. Like a demon that understands text---
+
+## ✨ Features
+
+- 📄 Upload any PDF file
+- 🤖 Ask natural language questions
+- 🔍 Get contextually accurate answers
+- ⚡ Fast in-memory vector search with FAISS
+- 💡 Powered by local HuggingFace models — no OpenAI key needed
+- 🌑 Dark-themed Streamlit UI (custom CSS)
 
 ---
 
-## 💻 Local Setup
+## 🧠 Tech Stack
+
+| Layer        | Tool / Library              |
+|-------------|-----------------------------|
+| Frontend    | `Streamlit`                 |
+| Backend     | `LangChain`, `SentenceTransformers` |
+| Embeddings  | `all-MiniLM-L6-v2` (HuggingFace) |
+| Language Model | `GPT2` from `transformers` |
+| Vector Store| `FAISS`                     |
+| PDF Parsing | `PyPDF2`                    |
+.
+---
+
+## 🛠️ Local Setup Instructions
 
 ```bash
 # Clone the repo
-git clone https://github.com/SrijanReddyThandra/chat-with-your-notes.git
+git clone https://github.com/SRIJAN2426/chat-with-your-notes.git
 cd chat-with-your-notes
 
 # Create virtual environment
 python3 -m venv venv
 source venv/bin/activate
 
-# Install requirements
+# Install dependencies
 pip install -r requirements.txt
 
-# Run the devil 🧠
+# Run the app
 streamlit run app.py
+chat-with-your-notes/
+│
+├── app.py                  # Main Streamlit app
+├── requirements.txt        # Python dependencies
+├── .gitignore
+├── README.md
+│
+├── assets/
+│   └── dark-theme.css      # Optional Streamlit custom styling
+│
+└── utils/
+    ├── pdf_utils.py        # PDF text extraction logic
+    └── qa_utils.py         # Vectorstore & QA chain setup
+
+---
+
+## 🖼️ UI Preview (Optional)
+
+> 📸 Add screenshots here after running locally — like:
+> - File Upload Page
+> - Question + Answer View
+> - Dark theme magic
+
+---
+
+## 🔮 Future Scope
+
+- [ ] Support multiple PDF uploads
+- [ ] Deploy on Streamlit Cloud
+- [ ] Add summarization + highlights
+- [ ] Save chat history
+- [ ] Voice-based queries 🗣️
+
+---
+
+## 🙌 Credits
+
+- 👨‍💻 Built by [**Srijan Reddy**](https://github.com/SRIJAN2426)
+- 🔗 Powered by:
+  - [LangChain](https://www.langchain.com/)
+  - [HuggingFace Transformers](https://huggingface.co/)
+  - [FAISS](https://github.com/facebookresearch/faiss)
+  - [Streamlit](https://streamlit.io/)
+
+---
+
+> 💥 Unleashing PDF-based AI... **Srijan-style.**
 
